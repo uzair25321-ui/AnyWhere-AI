@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anywhere AI — Your AI writing assistant, anywhere you type</title>
+    <meta
+      name="description"
+      content="Select text in any app, press Ctrl + Shift + A, and get a sharper version in seconds. Six AI providers, rich formatting, encrypted keys, Windows 10 & 11."
+    />
+    <meta name="theme-color" content="#17181d" />
+    <meta property="og:title" content="Anywhere AI — AI writing, anywhere you type" />
+    <meta
+      property="og:description"
+      content="One shortcut. Every app. Better words. Download Anywhere AI for Windows."
+    />
+    <meta property="og:image" content="assets/hero-aurora.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650&family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="nav" id="site-nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Anywhere AI home">
+          <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#spark" /></svg></span>
+          <span>Anywhere <b>AI</b></span>
+        </a>
+        <nav class="nav-links" id="nav-links" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#formatting">Formatting</a>
+          <a href="#how">How it works</a>
+          <a href="#providers">Providers</a>
+          <a href="#faq">FAQ</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#feedback">Feedback</a>
+        </nav>
+        <div class="nav-actions">
+          <span class="version-chip"><span class="pulse-dot"></span><span id="release-version-chip">v1.0.6</span></span>
+          <a class="btn btn-primary btn-small" href="#download">
+            <span>Download</span>
+            <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#arrow-right" /></svg>
+          </a>
+          <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-art-wrap" aria-hidden="true">
+          <img class="hero-art" src="assets/hero-aurora.png" alt="" />
+        </div>
+        <div class="hero-fade" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow hero-eyebrow"><span class="pulse-dot"></span>Version 1.0 · Windows 10 &amp; 11</span>
+            <h1>AI writing, <span class="grad-text">anywhere</span> you type.</h1>
+            <p class="lede">
+              Select text in any app, press
+              <span class="inline-keys"><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>A</kbd></span>,
+              and get a sharper version in seconds — with bold, lists, checklists and emojis included.
+              Need help with something on screen? Capture an area with
+              <span class="inline-keys"><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>I</kbd></span> and ask about the image.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary btn-large" href="#download">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#download" /></svg>
+                <span>Download for Windows</span>
+                <span class="btn-meta">195&nbsp;MB</span>
+              </a>
+              <a class="btn btn-ghost btn-large" href="#formatting">
+                <span>See it in action</span>
+                <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#chevron-down" /></svg>
+              </a>
+            </div>
+            <ul class="hero-meta">
+              <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#circle-check" /></svg>No account needed</li>
+              <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#shield" /></svg>Keys stay encrypted</li>
+              <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#providers" /></svg>6 AI providers</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" id="hero-visual">
+            <div class="visual-glow" aria-hidden="true"></div>
+            <div class="app-tilt" id="app-tilt">
+              <div class="app-window">
+                <div class="app-titlebar">
+                  <div class="app-brand">
+                    <span class="app-brand-mark" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#spark" /></svg></span>
+                    <span>Anywhere <b>AI</b></span>
+                    <i class="app-divider"></i>
+                    <span class="app-window-label">Text assistant</span>
+                  </div>
+                  <span class="app-close" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#close" /></svg></span>
+                </div>
+
+                <div class="app-body">
+                  <div class="app-head">
+                    <div>
+                      <h2>A better way to say it.</h2>
+                      <p>A little polish, without losing your voice.</p>
+                    </div>
+                    <span class="app-select" aria-hidden="true">OpenAI <small>/ gpt-6-luna</small><svg class="icon icon-small"><use href="assets/icons.svg#chevron-down" /></svg></span>
+                  </div>
+
+                  <div class="app-caption"><span>Selected text</span><span>Captured with your shortcut</span></div>
+                  <div class="app-selection">hey team, the launch is looking good but we still need someone to double check the onboarding emails before friday. also the pricing page copy feels a bit confusing rn.</div>
+
+                  <div class="app-caption"><span>Your instruction</span><span>Optional</span></div>
+                  <div class="app-instruction"><span id="typed-instruction">Improve the writing while keeping my tone.</span><span class="type-caret" aria-hidden="true"></span></div>
+
+                  <div class="app-chips" aria-hidden="true">
+                    <span class="app-chip is-active">Improve writing</span>
+                    <span class="app-chip">Fix grammar</span>
+                    <span class="app-chip">Translate to Urdu</span>
+                    <span class="app-chip">Explain code</span>
+                  </div>
+
+                  <div class="app-answer">
+                    <div class="app-answer-head">
+                      <span class="app-answer-label"><svg class="icon icon-small"><use href="assets/icons.svg#spark" /></svg>AI RESPONSE</span>
+                      <span class="app-ready"><i></i>Ready to use</span>
+                    </div>
+                    <div class="mini-md">
+                      <p>Hi team,</p>
+                      <p>The launch is <strong>on track</strong>, with two loose ends to close before Friday. 🚀</p>
+                      <ul>
+                        <li>Double-check the <em>onboarding emails</em></li>
+                        <li>Simplify the pricing page copy</li>
+                      </ul>
+                      <p><strong>Todo:</strong></p>
+                      <ul class="task-list">
+                        <li><span class="task-box is-done">✓</span>Finalize the installer</li>
+                        <li><span class="task-box"></span>Approve the pricing copy</li>
+                      </ul>
+                    </div>
+                    <div class="app-answer-actions" aria-hidden="true">
+                      <span><svg class="icon icon-small"><use href="assets/icons.svg#copy" /></svg>Copy</span>
+                      <span class="is-strong"><svg class="icon icon-small"><use href="assets/icons.svg#replace" /></svg>Replace selection</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-chip float-a" aria-hidden="true">
+              <span class="mini-keys"><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>A</kbd></span>
+              <span>Anywhere</span>
+            </div>
+            <div class="float-chip float-b" aria-hidden="true">
+              <svg class="icon icon-small"><use href="assets/icons.svg#providers" /></svg>
+              <span>6 providers</span>
+            </div>
+            <div class="float-chip float-c" aria-hidden="true">
+              <svg class="icon icon-small"><use href="assets/icons.svg#spark" /></svg>
+              <span>Rich formatting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="marquee-wrap" aria-hidden="true">
+          <div class="marquee">
+            <div class="marquee-track">
+              <span>Improve writing</span><i>✦</i><span>Fix grammar</span><i>✦</i><span>Translate to Urdu</span><i>✦</i><span>Summarize notes</span><i>✦</i><span>Explain code</span><i>✦</i><span>Make a checklist</span><i>✦</i><span>Reply politely</span><i>✦</i>
+              <span>Improve writing</span><i>✦</i><span>Fix grammar</span><i>✦</i><span>Translate to Urdu</span><i>✦</i><span>Summarize notes</span><i>✦</i><span>Explain code</span><i>✦</i><span>Make a checklist</span><i>✦</i><span>Reply politely</span><i>✦</i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band">
+        <div class="container stats-grid">
+          <div class="stat reveal"><strong>6</strong><span>AI providers</span></div>
+          <div class="stat reveal"><strong>2</strong><span>global shortcuts</span></div>
+          <div class="stat reveal"><strong>0</strong><span>accounts required</span></div>
+          <div class="stat reveal"><strong>100<span>%</span></strong><span>keys stored locally</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Why Anywhere AI</span>
+            <h2>Two shortcuts. Every app.<br /><span class="muted-strong">More possibilities.</span></h2>
+            <p>Built for the way you actually write — in mail, docs, chat, code, and everywhere in between.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal" style="--accent: var(--amber)">
+              <span class="feature-icon"><svg class="icon"><use href="assets/icons.svg#keyboard" /></svg></span>
+              <h3>Select. Press. Polish.</h3>
+              <p>A global shortcut captures your selection in any app and opens a clean, focused assistant right where you are.</p>
+              <span class="feature-tag">Works everywhere</span>
+            </article>
+            <article class="feature-card reveal" style="--accent: var(--lavender)">
+              <span class="feature-icon"><svg class="icon"><use href="assets/icons.svg#providers" /></svg></span>
+              <h3>Six AI brains</h3>
+              <p>OpenAI, Gemini, Grok, DeepSeek, Kimi and Claude. Bring your own key and switch providers in one click.</p>
+              <span class="feature-tag">Your choice of model</span>
+            </article>
+            <article class="feature-card reveal" style="--accent: var(--green)">
+              <span class="feature-icon"><svg class="icon"><use href="assets/icons.svg#paragraph" /></svg></span>
+              <h3>Real formatting</h3>
+              <p><strong>Bold</strong>, <em>italic</em>, numbered lists, to-do checklists, code and emojis render properly — not as raw symbols.</p>
+              <span class="feature-tag">New in v1.0</span>
+            </article>
+            <article class="feature-card reveal" style="--accent: var(--amber)">
+              <span class="feature-icon"><svg class="icon"><use href="assets/icons.svg#eye" /></svg></span>
+              <h3>Review before you paste</h3>
+              <p>Every answer is a draft. Preview the formatting, edit the markdown, then copy or replace when it feels right.</p>
+              <span class="feature-tag">You stay in control</span>
+            </article>
+            <article class="feature-card reveal" style="--accent: var(--lavender)">
+              <span class="feature-icon"><svg class="icon"><use href="assets/icons.svg#replace" /></svg></span>
+              <h3>Replace in place</h3>
+              <p>One click swaps the response back into the original selection, in the original app. No copy-paste gymnastics.</p>
+              <span class="feature-tag">Seamless flow</span>
+            </article>
+            <article class="feature-card reveal" style="--accent: var(--green)">
+              <span class="feature-icon"><svg class="icon"><use href="assets/icons.svg#shield" /></svg></span>
+              <h3>Private by default</h3>
+              <p>Nothing is sent until you press Send. API keys are encrypted with your operating system's secure storage.</p>
+              <span class="feature-tag">Local key storage</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section screenshot-section" id="screenshots" aria-labelledby="screenshot-heading">
+        <div class="container screenshot-grid">
+          <div class="screenshot-copy reveal">
+            <span class="eyebrow">A little less explaining. A little more showing.</span>
+            <h2 id="screenshot-heading">If you can see it,<br /><span class="grad-text">you can ask about it.</span></h2>
+            <p>A confusing chart. An error message. Text you cannot select. Capture just the part you need, then let your AI help make sense of it.</p>
+            <div class="screenshot-shortcut">
+              <span>YOUR SCREEN, ONE SHORTCUT AWAY</span>
+              <div><kbd>Ctrl</kbd><i>+</i><kbd>Shift</kbd><i>+</i><kbd>I</kbd></div>
+            </div>
+            <ol class="screenshot-instructions">
+              <li><b>01</b><div><strong>Frame what matters</strong><p>Your screen dims. Drag an area on one monitor and release to capture. Press Esc to cancel.</p></div></li>
+              <li><b>02</b><div><strong>Take a look before you share</strong><p>Your screenshot appears above selected text in the assistant. Remove it or add an instruction.</p></div></li>
+              <li><b>03</b><div><strong>Press Send. Get the bigger picture.</strong><p>Explain, translate or troubleshoot what is in the image — without uploading a file by hand.</p></div></li>
+            </ol>
+            <p class="screenshot-compatibility"><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#providers" /></svg><span>Use an image-capable model from <strong>OpenAI, Gemini, Grok or Claude.</strong> DeepSeek and Kimi are text-only in this app.</span></p>
+          </div>
+
+          <div class="screenshot-demo reveal" id="screenshot-demo" data-stage="answer">
+            <div class="screenshot-demo-head"><span><i></i>FROM SCREEN TO UNDERSTANDING</span><span>Interactive demo</span></div>
+            <div class="screenshot-stage" aria-label="Illustration of capturing a chart and asking AI to explain it">
+              <div class="screen-workspace" aria-hidden="true">
+                <div class="screen-window-bar"><span class="screen-dots"><i></i><i></i><i></i></span><span>Project overview</span><span>•••</span></div>
+                <div class="screen-workspace-body">
+                  <div class="screen-sidebar"><span></span><span></span><span></span><span></span></div>
+                  <div class="screen-dashboard"><span class="screen-overline">THIS WEEK AT A GLANCE</span><div class="screen-metrics"><div><small>Visitors</small><strong>12,840</strong></div><div><small>Growth</small><strong>+32%</strong></div></div>
+                    <div class="screen-chart"><div><strong>Weekly visitors</strong><span>+32% this week</span></div><div class="screen-bars"><i style="--bar: 28%"></i><i style="--bar: 44%"></i><i style="--bar: 36%"></i><i style="--bar: 59%"></i><i style="--bar: 51%"></i><i style="--bar: 79%"></i><i style="--bar: 96%"></i></div><div class="screen-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
+                    <div class="screen-skeleton"><span></span><span></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="screen-selection" aria-hidden="true"><span>Drag to capture</span><i class="screen-pointer"></i></div>
+              <div class="screenshot-assistant">
+                <div class="screenshot-assistant-head"><span><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#spark" /></svg>Anywhere <b>AI</b></span><small>Image assistant</small></div>
+                <div class="screenshot-assistant-body">
+                  <span class="screen-overline">SCREENSHOT PREVIEW</span>
+                  <div class="screenshot-thumbnail" role="img" aria-label="Captured weekly visitors chart"><span>Weekly visitors <b>+32%</b></span><div class="screen-bars"><i style="--bar: 28%"></i><i style="--bar: 44%"></i><i style="--bar: 36%"></i><i style="--bar: 59%"></i><i style="--bar: 51%"></i><i style="--bar: 79%"></i><i style="--bar: 96%"></i></div></div>
+                  <div class="screenshot-context"><span>SELECTED TEXT · OPTIONAL</span><p>What changed this week?</p></div>
+                  <div class="screenshot-question"><span>Explain this chart in simple terms.</span><button id="screenshot-send" type="button" aria-label="Show sample AI answer">Send <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#arrow-right" /></svg></button></div>
+                  <div class="screenshot-answer"><span><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#spark" /></svg>SAMPLE AI RESPONSE</span><p>Traffic picked up over the week, with <strong>the biggest peak on Sunday.</strong> The chart reports 32% growth, with a clear lift over the weekend.</p></div>
+                  <p class="screenshot-local"><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#lock" /></svg>Local until you press Send</p>
+                </div>
+              </div>
+            </div>
+            <div class="screenshot-demo-controls">
+              <div role="group" aria-label="Screenshot demo steps"><button type="button" data-capture-stage="capture" aria-pressed="false">1. Capture</button><button type="button" data-capture-stage="preview" aria-pressed="false">2. Preview</button><button type="button" data-capture-stage="answer" aria-pressed="true">3. Ask AI</button></div>
+              <button class="screenshot-replay" id="screenshot-replay" type="button">Replay demo <span aria-hidden="true">↻</span></button>
+            </div>
+            <p class="screenshot-demo-caption" id="screenshot-demo-caption" aria-live="polite">After you press Send, your chosen AI can explain the image.</p>
+            <p class="screenshot-demo-disclaimer">Illustrated example only. This demo does not capture your screen or contact an AI provider.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section formatting-section" id="formatting">
+        <div class="container formatting-grid">
+          <div class="formatting-copy reveal">
+            <span class="eyebrow">New in v1.0</span>
+            <h2>Answers that look the way they should.</h2>
+            <p>
+              Writing rarely fits in one plain paragraph. Anywhere AI now understands markdown and renders it —
+              <strong>bold</strong>, <em>italics</em>, numbered steps, bullet points, checklists, code and a well-placed emoji.
+            </p>
+            <p class="muted">
+              Preview the formatted answer, switch to <span class="mono">Edit</span> for the raw markdown, and copy clean text
+              when you are done. Formatting is a presentation layer — your pasted result stays tidy.
+            </p>
+
+            <div class="sample-chips" role="group" aria-label="Example requests">
+              <button class="sample-chip is-active" type="button" data-sample="email">Polish an email</button>
+              <button class="sample-chip" type="button" data-sample="checklist">Make a checklist</button>
+              <button class="sample-chip" type="button" data-sample="code">Explain code</button>
+            </div>
+
+            <ul class="formatting-points">
+              <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#check" /></svg>Markdown-aware rendering</li>
+              <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#check" /></svg>Clean plain text for copy &amp; replace</li>
+              <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#check" /></svg>Emoji, code blocks and task lists</li>
+            </ul>
+          </div>
+
+          <div class="demo-card reveal">
+            <div class="demo-toolbar">
+              <span class="demo-title"><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#spark" /></svg>Preview</span>
+              <div class="demo-toggle" role="group" aria-label="Preview mode">
+                <button class="is-active" type="button" data-mode="formatted">Formatted</button>
+                <button type="button" data-mode="raw">Raw markdown</button>
+              </div>
+            </div>
+            <div class="demo-prompt"><span class="demo-prompt-label">You</span><span id="demo-instruction">Polish this launch update for my team.</span></div>
+            <div class="demo-answer">
+              <div class="demo-answer-head"><span><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#spark" /></svg>AI RESPONSE</span><span class="app-ready"><i></i>Ready to use</span></div>
+              <div class="md demo-rendered" id="demo-rendered"></div>
+              <pre class="demo-raw" id="demo-raw" hidden></pre>
+            </div>
+            <div class="demo-footer">
+              <span><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#lock" /></svg>Sent only when you press Send</span>
+              <span class="demo-actions" aria-hidden="true"><span><svg class="icon icon-small"><use href="assets/icons.svg#copy" /></svg>Copy</span><span class="demo-apply"><svg class="icon icon-small"><use href="assets/icons.svg#replace" /></svg>Replace selection</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">How it works</span>
+            <h2>Selection to polished<br /><span class="muted-strong">in three moves.</span></h2>
+          </div>
+
+          <div class="steps">
+            <article class="step reveal">
+              <div class="step-visual step-visual-keys" aria-hidden="true">
+                <span class="keycap-row"><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>A</kbd></span>
+                <span class="step-cursor"></span>
+              </div>
+              <span class="step-number">01</span>
+              <h3>Select and press</h3>
+              <p>Highlight any text, then use your global shortcut. Anywhere AI grabs the selection and opens beside your work.</p>
+            </article>
+
+            <article class="step reveal">
+              <div class="step-visual step-visual-chat" aria-hidden="true">
+                <span class="mini-bubble">Improve writing</span>
+                <span class="mini-bubble is-lit">Fix grammar</span>
+                <span class="mini-line"></span>
+                <span class="mini-line is-short"></span>
+              </div>
+              <span class="step-number">02</span>
+              <h3>Pick a prompt</h3>
+              <p>Improve, fix, translate, explain — or type your own instruction. Your chosen provider does the rest.</p>
+            </article>
+
+            <article class="step reveal">
+              <div class="step-visual step-visual-replace" aria-hidden="true">
+                <span class="replace-box">The launch is <strong>on track</strong>. 🚀</span>
+                <span class="replace-btn"><svg class="icon icon-small"><use href="assets/icons.svg#replace" /></svg>Replace</span>
+              </div>
+              <span class="step-number">03</span>
+              <h3>Review and apply</h3>
+              <p>Polish the answer if you want, then replace your selection or copy clean text. Done in seconds.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section providers-section" id="providers">
+        <div class="container providers-grid">
+          <div class="providers-copy reveal">
+            <span class="eyebrow">Bring your own AI</span>
+            <h2>Your favourite model,<br /><span class="muted-strong">already connected.</span></h2>
+            <p>Add a key for any supported provider in Settings. Model names are editable, so you can use whichever model your account can access.</p>
+            <a class="text-link" href="#download">Get Anywhere AI<svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#arrow-right" /></svg></a>
+          </div>
+          <div class="provider-tiles">
+            <div class="provider-tile reveal" style="--tile-accent: #a8dabc"><span class="provider-mark" aria-hidden="true"><img src="assets/providers/openai.svg" alt="" /></span><span>OpenAI</span><small>gpt-6-luna</small></div>
+            <div class="provider-tile reveal" style="--tile-accent: #a9a7ff"><span class="provider-mark" aria-hidden="true"><img src="assets/providers/gemini.svg" alt="" /></span><span>Google Gemini</span><small>gemini-3.8-flash</small></div>
+            <div class="provider-tile reveal" style="--tile-accent: #ffbf70"><span class="provider-mark" aria-hidden="true"><img src="assets/providers/grok.svg" alt="" /></span><span>Grok</span><small>grok-4.3</small></div>
+            <div class="provider-tile reveal" style="--tile-accent: #8fc5ff"><span class="provider-mark" aria-hidden="true"><img src="assets/providers/deepseek.svg" alt="" /></span><span>DeepSeek</span><small>deepseek-chat</small></div>
+            <div class="provider-tile reveal" style="--tile-accent: #f2b8d0"><span class="provider-mark" aria-hidden="true"><img src="assets/providers/kimi.svg" alt="" /></span><span>Kimi</span><small>moonshot-v1-8k</small></div>
+            <div class="provider-tile reveal" style="--tile-accent: #e6b9a1"><span class="provider-mark" aria-hidden="true"><img src="assets/providers/claude.svg" alt="" /></span><span>Claude</span><small>claude-haiku-5-5</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews-section" id="reviews" hidden>
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Reviews</span>
+            <h2>Notes from people<br /><span class="muted-strong">who write everywhere.</span></h2>
+            <p>Real comments from Anywhere AI users, shared with permission.</p>
+          </div>
+          <div class="reviews-grid" id="reviews-grid"></div>
+          <div class="reviews-cta reveal">
+            <p>Used Anywhere AI? Your note could help the next person decide.</p>
+            <a class="btn btn-ghost" href="#feedback">
+              <span>Share your experience</span>
+              <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#arrow-right" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section download-section" id="download">
+        <div class="container">
+          <div class="download-card reveal">
+            <img class="download-art" src="assets/download-glow.png" alt="" aria-hidden="true" />
+            <div class="download-inner">
+              <div class="download-copy">
+                <span class="eyebrow">Download</span>
+                <h2>Put better words<br /><span class="grad-text">everywhere.</span></h2>
+                <p>
+                  One small assistant that lives in your tray and appears the moment you need it.
+                  Windows 10 and 11, 64-bit.
+                </p>
+                <ul class="download-facts">
+                  <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#circle-check" /></svg>Version <span id="download-facts-version">1.0.6</span></li>
+                  <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#circle-check" /></svg><span id="download-facts-size">195 MB</span> installer</li>
+                  <li><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#circle-check" /></svg>Windows 10 / 11</li>
+                </ul>
+                <div class="checksum">
+                  <span>SHA-256</span>
+                  <code id="checksum-value">10DF3B12F9A94693CEFBBFAA0A1A190DE289858D1833EF3D5C078BF027AC28F3</code>
+                  <button class="checksum-copy" id="checksum-copy" type="button" aria-label="Copy checksum">
+                    <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#copy" /></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="download-panel">
+                <span class="download-mark" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#spark" /></svg></span>
+                <span class="download-panel-label">Anywhere AI</span>
+                <strong class="download-version" id="download-version">v1.0.6</strong>
+                <a class="btn btn-primary btn-large btn-download" id="download-link" href="/download">
+                  <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3v12M7 10l5 5 5-5M4 19h16" />
+                  </svg>
+                  <span>Download installer</span>
+                </a>
+                <p class="download-note">Direct download · No email required</p>
+                <button class="download-guide" id="install-guide-open" type="button">
+                  <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#list-check" /></svg>
+                  <span>How to install · 4 short steps</span>
+                </button>
+                <div class="download-count" id="download-count-wrap">
+                  <strong id="download-count">—</strong>
+                  <span>downloads so far</span>
+                </div>
+                <p class="download-os"><span class="win-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Windows 10 &amp; 11 · 64-bit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feedback-section" id="feedback">
+        <div class="container">
+          <div class="feedback-shell">
+            <div class="feedback-copy reveal">
+              <span class="eyebrow">Feedback</span>
+              <h2>Tell me what<br /><span class="grad-text">to fix next.</span></h2>
+              <p class="feedback-lede">
+                Found a bug, have an idea, or just want to say it works? Every note helps shape the next
+                version of Anywhere AI.
+              </p>
+              <ul class="feedback-points">
+                <li>
+                  <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#circle-check" /></svg>
+                  <span>Read by the developer, not a bot.</span>
+                </li>
+                <li>
+                  <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#circle-check" /></svg>
+                  <span>No account needed — email is optional.</span>
+                </li>
+                <li>
+                  <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#circle-check" /></svg>
+                  <span>App version attached when you send from the app.</span>
+                </li>
+              </ul>
+              <div class="feedback-note">
+                <span class="feedback-note-icon"><svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#info" /></svg></span>
+                <p>
+                  The app has its own feedback popup with your version attached. Both the app and this
+                  page deliver to the same inbox, so fixes get to you faster.
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback-card reveal">
+              <form class="feedback-form" id="feedback-form" novalidate>
+                <div class="feedback-card-head">
+                  <span class="feedback-badge"><i></i>Open inbox</span>
+                  <span class="feedback-reply">Read personally · no auto-replies</span>
+                </div>
+
+                <fieldset class="feedback-fieldset">
+                  <legend class="feedback-legend">What kind of feedback?</legend>
+                  <div class="feedback-chips">
+                    <label class="feedback-chip">
+                      <input type="radio" name="category" value="bug" required />
+                      <span>Bug report</span>
+                    </label>
+                    <label class="feedback-chip">
+                      <input type="radio" name="category" value="idea" />
+                      <span>Feature idea</span>
+                    </label>
+                    <label class="feedback-chip">
+                      <input type="radio" name="category" value="praise" />
+                      <span>Praise</span>
+                    </label>
+                    <label class="feedback-chip">
+                      <input type="radio" name="category" value="other" />
+                      <span>Something else</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="feedback-fieldset">
+                  <legend class="feedback-legend">How is it going? <em>Optional</em></legend>
+                  <div class="feedback-stars" aria-label="Rate Anywhere AI from 1 to 5">
+                    <label><input type="radio" name="rating" value="1" /><span aria-hidden="true">★</span><em class="visually-hidden">1 star</em></label>
+                    <label><input type="radio" name="rating" value="2" /><span aria-hidden="true">★</span><em class="visually-hidden">2 stars</em></label>
+                    <label><input type="radio" name="rating" value="3" /><span aria-hidden="true">★</span><em class="visually-hidden">3 stars</em></label>
+                    <label><input type="radio" name="rating" value="4" /><span aria-hidden="true">★</span><em class="visually-hidden">4 stars</em></label>
+                    <label><input type="radio" name="rating" value="5" /><span aria-hidden="true">★</span><em class="visually-hidden">5 stars</em></label>
+                  </div>
+                </fieldset>
+
+                <div class="feedback-grid">
+                  <label class="feedback-field">
+                    <span>Name <em>Required</em></span>
+                    <input type="text" name="name" maxlength="80" minlength="2" autocomplete="name" placeholder="Your name" required />
+                  </label>
+                  <label class="feedback-field">
+                    <span>Email <em>Optional</em></span>
+                    <input type="email" name="email" maxlength="160" autocomplete="email" placeholder="you@example.com" />
+                  </label>
+                </div>
+
+                <label class="feedback-field feedback-message-field">
+                  <span>Message <em>Required</em></span>
+                  <textarea name="message" id="feedback-message" rows="5" maxlength="4000" required placeholder="What happened? What would make it better?"></textarea>
+                  <span class="feedback-meter" id="feedback-meter">0 / 200 words</span>
+                </label>
+
+                <label class="feedback-consent">
+                  <input type="checkbox" name="show_public" checked />
+                  <span class="feedback-consent-box" aria-hidden="true"><svg class="icon icon-small"><use href="assets/icons.svg#check" /></svg></span>
+                  <span class="feedback-consent-text">
+                    <strong>Show this as a review on the website</strong>
+                    <small>Your name and message are visible. Email stays private. Published after a quick check.</small>
+                  </span>
+                </label>
+
+                <input type="text" name="company" class="feedback-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <input type="hidden" name="source" value="website" />
+                <input type="hidden" name="app_version" value="" />
+
+                <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p>
+
+                <button class="btn btn-primary btn-large feedback-submit" type="submit" id="feedback-submit">
+                  <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send" /></svg>
+                  <span>Send feedback</span>
+                </button>
+                <p class="feedback-privacy">
+                  Your email is only used to reply. No newsletter, no account.
+                </p>
+              </form>
+
+              <div class="feedback-success" id="feedback-success" role="status" tabindex="-1" hidden>
+                <span class="feedback-success-icon" aria-hidden="true">
+                  <svg class="icon"><use href="assets/icons.svg#check" /></svg>
+                </span>
+                <h3>Feedback received.</h3>
+                <p>Thanks for taking the time — it genuinely helps. Your note is in the inbox now. If you chose to share it publicly, it will appear after a quick review.</p>
+                <button class="btn btn-ghost" type="button" id="feedback-again">Send another</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container faq-wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Good questions,<br /><span class="muted-strong">short answers.</span></h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Is Anywhere AI free?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer"><div><p>The app itself is free to download. You connect your own provider account, so usage is billed directly by that provider.</p></div></div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Which AI providers are supported?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer"><div><p>OpenAI, Google Gemini, Grok, DeepSeek, Kimi and Claude. Each provider keeps its own encrypted API key, and model names can be edited in Settings.</p></div></div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Are my text and screenshots sent automatically?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer"><div><p>No. Selected text and screenshots stay local until you press <strong>Send</strong>. Review or remove the screenshot first; your chosen provider only receives it when you send the request.</p></div></div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do I ask AI about a screenshot?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer"><div><p>With Anywhere AI running, press <strong>Ctrl + Shift + I</strong>, drag an area on any one monitor and release. Press <strong>Esc</strong> or Cancel to exit instead. The capture appears above selected text in the assistant. Add a question and press Send. Choose an image-capable model from OpenAI, Gemini, Grok or Claude; DeepSeek and Kimi are text-only in this app. The text shortcut defaults to <strong>Ctrl + Shift + A</strong> and can be changed in Settings; the screenshot shortcut is fixed.</p></div></div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can I edit the AI response before using it?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer"><div><p>Yes. Responses open as a formatted preview. Switch to Edit to change the markdown, then copy clean text or replace your original selection.</p></div></div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Does it work on macOS?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer"><div><p>This release is a Windows 10 &amp; 11 build. A macOS build is planned for a later version; the download on this page is for Windows.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Anywhere AI home">
+            <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#spark" /></svg></span>
+            <span>Anywhere <b>AI</b></span>
+          </a>
+          <p>A better way to say it, wherever you type.</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#formatting">Formatting</a>
+          <a href="#download">Download</a>
+          <a href="#faq">FAQ</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#feedback">Feedback</a>
+        </nav>
+        <div class="footer-meta">
+          <span>© 2026 Muhammad Uzair</span>
+          <a href="https://uzairbuilds.tech" target="_blank" rel="noopener noreferrer">uzairbuilds.tech<svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#external-link" /></svg></a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="install-dialog" id="install-dialog" aria-labelledby="install-title">
+      <div class="install-shell">
+        <header class="install-head">
+          <div class="install-head-copy">
+            <span class="eyebrow">Install guide</span>
+            <h2 id="install-title">Up and running in four steps.</h2>
+            <p class="install-meta">
+              <span>Version <span id="install-meta-version">1.0.6</span></span>
+              <span id="install-meta-size">195 MB</span>
+              <span>Windows 10 &amp; 11 · 64-bit</span>
+              <a class="install-roadmap-link" href="#install-roadmap">What's new →</a>
+            </p>
+          </div>
+          <button class="install-close" id="install-close" type="button" aria-label="Close install guide">
+            <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#close" /></svg>
+          </button>
+        </header>
+
+        <div class="install-body">
+          <ol class="install-steps">
+            <li>
+              <span class="install-step-index" aria-hidden="true">01</span>
+              <div class="install-step-copy">
+                <h3>Download the installer</h3>
+                <p>
+                  Grab the installer below. If your browser asks what to do with the file, choose
+                  <strong>Save</strong> or <strong>Keep</strong>.
+                </p>
+                <a class="install-file" id="install-download-link" href="/download">
+                  <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#download" /></svg>
+                  <span id="install-file-name">Anywhere AI-Setup-1.0.6.exe</span>
+                  <small id="install-file-size">195 MB</small>
+                </a>
+              </div>
+            </li>
+            <li>
+              <span class="install-step-index" aria-hidden="true">02</span>
+              <div class="install-step-copy">
+                <h3>Run the installer</h3>
+                <p>
+                  Double-click the downloaded file. Setup installs for your Windows user only, so
+                  no admin rights are needed. On the options screen you can keep a
+                  <strong>desktop shortcut</strong>, add <strong>Start with Windows</strong>, and let
+                  setup <strong>launch the app</strong> when it finishes.
+                </p>
+                <div class="install-callout">
+                  <svg class="icon icon-small" aria-hidden="true"><use href="assets/icons.svg#shield" /></svg>
+                  <div>
+                    <strong>If Windows shows “Windows protected your PC”</strong>
+                    <p>
+                      This build is not code-signed, so SmartScreen may warn you. Click
+                      <strong>More info</strong>, then <strong>Run anyway</strong>. Some antivirus
+                      tools flag unsigned installers too — only run the file if you downloaded it
+                      from this page, and use the SHA-256 check below if you want to be sure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span class="install-step-index" aria-hidden="true">03</span>
+              <div class="install-step-copy">
+                <h3>Open Settings and add your API key</h3>
+                <p>
+                  Click the Anywhere AI icon in the system tray and open <strong>Settings</strong>.
+                  Choose your provider, paste its API key, check the model name, then click
+                  <strong>Save</strong> — the app tests the connection and tells you whether the key
+                  and model both work.
+                </p>
+                <p class="install-hint">
+                  No key yet? <strong>Get API key</strong> in Settings opens that provider's page.
+                  Provider usage is billed by them, separate from any chat subscription. Keys are
+                  encrypted and stay on this PC.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="install-step-index" aria-hidden="true">04</span>
+              <div class="install-step-copy">
+                <h3>Select text and press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd></h3>
+                <p>
+                  In any app — email, docs, a browser — select the text you want to change and press
+                  the shortcut. Type an instruction such as “make this shorter”, then press
+                  <strong>Send</strong> to ask your AI.
+                </p>
+                <p class="install-hint">
+                  Change the text shortcut any time in <strong>Settings → Shortcuts</strong>; it is saved
+                  instantly.
+                </p>
+                <p><strong>For screenshots:</strong> press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>, drag an area and release. Review the image above selected text, add a question, then press <strong>Send</strong>. Press Esc to cancel capture. Use an image-capable OpenAI, Gemini, Grok or Claude model.</p>
+              </div>
+            </li>
+          </ol>
+
+          <section class="install-roadmap" id="install-roadmap" aria-labelledby="roadmap-title">
+            <div class="roadmap-head">
+              <div>
+                <span class="roadmap-eyebrow">Release roadmap</span>
+                <h3 id="roadmap-title">What changed from v1.0.1 to v1.0.6</h3>
+              </div>
+              <span class="roadmap-range">6 releases</span>
+            </div>
+
+            <ol class="roadmap-list">
+              <li class="roadmap-item is-latest" data-roadmap-version="1.0.6">
+                <span class="roadmap-node" aria-hidden="true"></span>
+                <div class="roadmap-card">
+                  <div class="roadmap-card-head">
+                    <strong>v1.0.6</strong>
+                    <span class="roadmap-tag">Smarter answers</span>
+                    <span class="roadmap-badge" data-roadmap-badge>Latest</span>
+                  </div>
+                  <ul>
+                    <li>Answers now follow your instruction more closely and reply in your language.</li>
+                    <li>Cleaner results: no filler, no invented details, and only what's visible in screenshots.</li>
+                    <li>A live progress trail shows understanding, thinking, and generating while you wait.</li>
+                    <li>Long answers stream smoothly without freezing the panel, and Close now stops the reply instantly.</li>
+                    <li>Short answers stay plain, while lists, tables, and code stay neatly formatted.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="roadmap-item" data-roadmap-version="1.0.5">
+                <span class="roadmap-node" aria-hidden="true"></span>
+                <div class="roadmap-card">
+                  <div class="roadmap-card-head">
+                    <strong>v1.0.5</strong>
+                    <span class="roadmap-tag">Feedback</span>
+                    <span class="roadmap-badge" data-roadmap-badge hidden></span>
+                  </div>
+                  <ul>
+                    <li>A short feedback popup appears when you open the app, only until you send feedback.</li>
+                    <li>Feedback from the app and this page now lands in one shared inbox.</li>
+                    <li>Outdated versions now ask you to update before you keep using the app.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="roadmap-item" data-roadmap-version="1.0.4">
+                <span class="roadmap-node" aria-hidden="true"></span>
+                <div class="roadmap-card">
+                  <div class="roadmap-card-head">
+                    <strong>v1.0.4</strong>
+                    <span class="roadmap-tag">Screenshots</span>
+                    <span class="roadmap-badge" data-roadmap-badge hidden></span>
+                  </div>
+                  <ul>
+                    <li>New <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> shortcut to capture any part of your screen.</li>
+                    <li>Ask AI about your screenshot with OpenAI, Gemini, Grok or Claude.</li>
+                    <li>The assistant header now stays visible while you scroll.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="roadmap-item" data-roadmap-version="1.0.3">
+                <span class="roadmap-node" aria-hidden="true"></span>
+                <div class="roadmap-card">
+                  <div class="roadmap-card-head">
+                    <strong>v1.0.3</strong>
+                    <span class="roadmap-tag">Live answers</span>
+                    <span class="roadmap-badge" data-roadmap-badge hidden></span>
+                  </div>
+                  <ul>
+                    <li>Answers appear live as they are written, with a <strong>Stop</strong> button.</li>
+                    <li>Clearer messages when a provider does not respond.</li>
+                    <li>Safer updates and general security improvements.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="roadmap-item" data-roadmap-version="1.0.2">
+                <span class="roadmap-node" aria-hidden="true"></span>
+                <div class="roadmap-card">
+                  <div class="roadmap-card-head">
+                    <strong>v1.0.2</strong>
+                    <span class="roadmap-tag">Auto-updates</span>
+                    <span class="roadmap-badge" data-roadmap-badge hidden></span>
+                  </div>
+                  <ul>
+                    <li>The app now updates itself from <strong>Settings → App updates</strong>.</li>
+                    <li>Your settings are kept after every update.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="roadmap-item" data-roadmap-version="1.0.1">
+                <span class="roadmap-node" aria-hidden="true"></span>
+                <div class="roadmap-card">
+                  <div class="roadmap-card-head">
+                    <strong>v1.0.1</strong>
+                    <span class="roadmap-tag">Feedback &amp; errors</span>
+                    <span class="roadmap-badge" data-roadmap-badge hidden></span>
+                  </div>
+                  <ul>
+                    <li>Send feedback directly from the app.</li>
+                    <li>Clearer error messages for API key and model problems.</li>
+                  </ul>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="install-notes">
+            <h3>Good to know</h3>
+            <ul>
+              <li>
+                <strong>It lives in the tray.</strong> The shortcut works while the app is running.
+                Closing the assistant window just hides it; to quit completely, right-click the
+                tray icon and choose <strong>Quit</strong>.
+              </li>
+              <li>
+                <strong>Your text stays yours.</strong> Selected text is sent only when you press
+                Send, directly to the provider you picked. API keys never leave your PC.
+              </li>
+              <li>
+                <strong>Updating.</strong> From v1.0.2 onward the app updates itself — check
+                Settings → App updates. You can also run the newest installer from this page; your
+                settings are kept.
+              </li>
+              <li>
+                <strong>Uninstalling.</strong> Windows Settings → Apps → Installed apps →
+                Anywhere AI → Uninstall.
+              </li>
+              <li>
+                <strong>Something to report?</strong> Use <strong>Send feedback</strong> inside the
+                app, or the feedback form on this page. Both reach the same inbox.
+              </li>
+            </ul>
+
+            <details class="install-details">
+              <summary>Verify the download (optional)</summary>
+              <p>Compare the SHA-256 of the file you downloaded with this value:</p>
+              <code class="install-code" id="install-checksum-value"></code>
+              <p>In PowerShell, run:</p>
+              <code class="install-code" id="install-powershell-command">Get-FileHash ".\Anywhere AI-Setup-1.0.6.exe" -Algorithm SHA256</code>
+            </details>
+
+            <details class="install-details">
+              <summary>Shortcut or connection not working?</summary>
+              <ul>
+                <li>
+                  <strong>Nothing opens on the shortcut:</strong> another app may own
+                  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>. Pick a different one in
+                  Settings → Shortcuts.
+                </li>
+                <li>
+                  <strong>“Invalid API key”:</strong> copy the key again from the provider dashboard,
+                  with no extra spaces.
+                </li>
+                <li>
+                  <strong>“Invalid model name”:</strong> reset the model to the app default or paste
+                  the exact name from the provider's documentation.
+                </li>
+                <li>
+                  <strong>No selected text appears:</strong> click inside the text and select it
+                  again; a few apps block automated copying.
+                </li>
+              </ul>
+            </details>
+          </section>
+        </div>
+
+        <footer class="install-foot">
+          <p>Free · No account needed · Windows 10 &amp; 11</p>
+          <button class="btn btn-primary" id="install-action" type="button">Download installer</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
